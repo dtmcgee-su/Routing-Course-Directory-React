@@ -12,6 +12,7 @@ import About from './About';
 import Teachers from './Teachers';
 import Courses from './Courses';
 import NotFound from './NotFound';
+import Featured from './Featured';
 
 
 const App = () => (
@@ -22,7 +23,8 @@ const App = () => (
         <Route exact path = "/" component = { Home }/>
         {/* use render when you need to pass props to component you are rendering */}
         <Route path = "/about" render = { () => <About title = 'About'/> }/> 
-        <Route path = '/teachers' component = { Teachers } />
+        <Route exact path = '/teachers' component = { Teachers } />
+        <Route path = '/teachers/:topic/:name' component = { Featured }/>
         <Route path = '/courses' component = { Courses } />
         <Route component = { NotFound } />
       </Switch>
