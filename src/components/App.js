@@ -16,7 +16,7 @@ import Featured from './Featured';
 
 
 const App = () => (
-  <BrowserRouter>
+  <BrowserRouter basename="/course-directory">
     <div className="container">
       <Header />
       <Switch>
