@@ -2,7 +2,6 @@
   "name": "course-directory",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dtmcgee-su.github.io/course-directory",
   "devDependencies": {
     "react-scripts": "1.0.6"
   },
